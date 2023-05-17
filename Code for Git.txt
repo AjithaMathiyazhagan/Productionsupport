@@ -1,0 +1,74 @@
+git init gitrepo
+cd gitrepo/
+ls -lart
+git status
+cd ../
+git status
+cd gitrepo/
+git status
+git status
+git add sample.html
+git status
+git add *.html
+git add .
+git add sample*
+git status
+git status
+git commit -m ""
+git commit -m "Fixing Bug #1020"
+git status
+git log
+git log --oneline
+git log --oneline --graph --pretty
+
+git show <commit-id>
+
+git config --global user.name "Ajitha Mathiyazhagan"
+git config --global user.email "ajimathi087@gmail.com"
+
+git diff
+git diff sample2.html
+
+git diff --staged
+
+ git restore --staged sample*
+ git restore sample*
+ 
+ 
+ git reset --hard
+
+ git stash
+  git stash list
+  git stash apply stash@{0}
+  git stash pop stash@{0}
+
+ 
+   579  git status
+  580  git reset --hard
+  581  git status
+  582  git log
+  583  git branch -l
+  584  clear
+  585  git branch -l
+  586  git branch develop
+  587  git checkout develop
+  588  git branch -l
+  589  git log
+  590  git status
+  591  git add .
+  592  git commit -m "Commit Performed in Develop Branch"
+  593  git log
+  594  git checkout master
+  595  git log --oneline
+  596  clear
+  597  git log --oneline
+  598  git diff develop
+  599  git merge develop
+  600  git log --oneline
+  601  git diff develop
+  602  clear
+  603  git remote -v
+  604  git remote add origin https://github.com/AjithaMathiyazhagan/Productionsupport.git
+  605  git remote -v
+  606  git push origin master
+  607  git push origin develop
